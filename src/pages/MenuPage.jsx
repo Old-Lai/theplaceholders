@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/MenuPage.css';
+import '../styles/MenuPage.sass';
 function MenuPage() {
   return (
     <div className='groupTitle'>
