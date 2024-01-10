@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { MenuPage, ChrisPage, HenryPage, NotFoundPage } from './pages';
 
@@ -15,8 +14,5 @@ function App() {
     </BrowserRouter>
   );
 }
-
-ReactDOM.render(<App />, document.getElementById('root'));
-
 
 export default App;
