@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/MenuPage.sass';
+import '../styles/menuPage.sass';
 function MenuPage() {
   return (
     <div className='menuBody'>
