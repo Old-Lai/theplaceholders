@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/FloatingWords.css';
 
-const words = ['Innovative', 'Creative', 'Team Players', 'Problem Solver', 'Analytical'];
+const words = ['Innovative', 'Creative', 'Team Players', 'Problem Solvers', 'Analytical'];
 
 const FloatingWords = () => {
   return (
