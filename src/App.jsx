@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { MenuPage, ChrisPage, HenryPage, NotFoundPage } from './pages';
-import './styles/theme.css';
+import './styles/theme.sass';
 import  useDarkMode  from './components/useDarkMode'
 function App() {
   const [theme] = useDarkMode();
+  console.log(theme)
   return (
     <div className={theme}>
     <BrowserRouter>

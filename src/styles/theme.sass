@@ -1,0 +1,6 @@
+$dark-theme: true
+
+@mixin darkMode
+  @if $dark-theme
+    @media(prefers-color-scheme: dark)
+      @content
