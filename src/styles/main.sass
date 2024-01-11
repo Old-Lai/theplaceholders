@@ -1,17 +1,13 @@
-//global variables
-$main-text-color-dark: #fffaf0
-$main-text-color-light: #213547
-$main-background-color-dark: #242424
-$main-background-color-light: #e0e0e0
-
+@use './global/_colors.sass' as default_colors
+// @import './global/colors.sass'
 :root 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif
   line-height: 1.5
   font-weight: 400
 
   // color-scheme: light dark
-  color: $main-text-color-light
-  background-color: $main-background-color-light
+  color: default_colors.$main-text-color-light
+  background-color: default_colors.$main-background-color-light
 
 a 
   font-weight: 500
@@ -55,8 +51,8 @@ button:focus-visible
 
 @media (prefers-color-scheme: dark) 
   :root
-    color: $main-text-color-dark
-    background-color: $main-background-color-dark
+    color: default_colors.$main-text-color-dark
+    background-color: default_colors.$main-background-color-dark
 
   a 
     color: #2a5c91
