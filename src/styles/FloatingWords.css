@@ -10,7 +10,7 @@
   
   .floating-word {
     position: absolute;
-    font-size: 100px;
+    
     animation: float 10s ease-in-out infinite;
   }
   
@@ -34,29 +34,29 @@
     animation-duration: 8s;
     left: 5%;
     top: 60%;
+    font-size: 70px;
   }
   .floating-word-1 {
-    animation-duration: 12s;
+    animation-duration: 9s;
     left: 75%;
     top: 30%;
+    font-size: 50px;
   }
   .floating-word-2 {
-    animation-duration: 8s;
+    animation-duration: 10s;
     left: 15%;
     top: 10%;
+    font-size: 55px;
   }
   .floating-word-3 {
-    animation-duration: 12s;
+    animation-duration: 11s;
     left: 40%;
     top: 20%;
+    font-size: 60px;
   }
   .floating-word-4 {
-    animation-duration: 8s;
+    animation-duration: 12s;
     left: 60%;
     top: 50%;
+    font-size: 65px;
   }
-
-
-
-  /* Add specific positions and durations for each word */
-  
