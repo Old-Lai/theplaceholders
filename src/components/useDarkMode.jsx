@@ -7,7 +7,7 @@ const useDarkMode = () => {
     useEffect(() => {
       const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
   
-      if (prefersDarkMode) {
+      if (prefersDarkMode) {    
         setTheme('dark');
         console.log('dark mode')
       } else {

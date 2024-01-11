@@ -1,0 +1,62 @@
+.floating-words-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh; 
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .floating-word {
+    position: absolute;
+    font-size: 100px;
+    animation: float 10s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) translateX(0);
+    }
+    25% {
+      transform: translateY(-20px) translateX(15px);
+    }
+    50% {
+      transform: translateY(20px) translateX(-15px);
+    }
+    75% {
+      transform: translateY(-10px) translateX(-20px);
+    }
+  }
+  
+  /* Specific animations for each word to vary the movement */
+  .floating-word-0 {
+    animation-duration: 8s;
+    left: 5%;
+    top: 60%;
+  }
+  .floating-word-1 {
+    animation-duration: 12s;
+    left: 75%;
+    top: 30%;
+  }
+  .floating-word-2 {
+    animation-duration: 8s;
+    left: 15%;
+    top: 10%;
+  }
+  .floating-word-3 {
+    animation-duration: 12s;
+    left: 40%;
+    top: 20%;
+  }
+  .floating-word-4 {
+    animation-duration: 8s;
+    left: 60%;
+    top: 50%;
+  }
+
+
+
+  /* Add specific positions and durations for each word */
+  
