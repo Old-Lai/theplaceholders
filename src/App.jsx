@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { MenuPage, ChrisPage, HenryPage, NotFoundPage } from './pages';
-
 function App() {
   return (
     <BrowserRouter>
