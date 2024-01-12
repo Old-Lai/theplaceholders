@@ -1,6 +1,6 @@
 import React from 'react';
-import BackButton from '../components/BackButton'
-function HenryPage() {
+import BackButton from '../../components/BackButton'
+function OldlaiPage() {
   return (
     <div>
       <BackButton /> 
@@ -10,4 +10,4 @@ function HenryPage() {
   );
 }
 
-export default HenryPage;
+export default OldlaiPage;
