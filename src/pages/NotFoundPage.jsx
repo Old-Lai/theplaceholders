@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/notFoundPage.sass';
 
 function NotFoundPage() {
   return (
@@ -10,4 +11,4 @@ function NotFoundPage() {
   );
 }
 
-export default NotFoundPage;
+export default NotFoundPage
