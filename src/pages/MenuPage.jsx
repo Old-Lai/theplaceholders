@@ -1,6 +1,6 @@
 import React from 'react';
 import FloatingWords from "../components/FloatingWords";
-// import '../styles/menuPage.sass';
+import '../styles/menuPage.sass';
 function MenuPage() {
   return (
     <>
