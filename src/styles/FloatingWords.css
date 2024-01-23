@@ -30,7 +30,7 @@
   }
   
   /* Specific animations for each word to vary the movement */
-  .floating-word-0 {
+  /* .floating-word-0 {
     animation-duration: 8s;
     left: 5%;
     top: 60%;
@@ -59,4 +59,4 @@
     left: 60%;
     top: 50%;
     font-size: 65px;
-  }
+  } */
