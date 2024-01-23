@@ -1,13 +1,22 @@
-import React from 'react';
+import { useEffect, useState } from 'react'
 import BackButton from '../../components/BackButton'
+import scrambleAppearEffect from './helper/scrambleAppearEffect'
+import '../../styles/oldlai/oldlaiPage.sass'
 function OldlaiPage() {
+  const [title, setTitle] = useState("")
+  useEffect(() => {
+    const titleText = "This is Henry's page"
+    const intervalTimer = 30
+    const effectDuration = 4000
+    scrambleAppearEffect(titleText, intervalTimer, effectDuration, setTitle)
+  },[])
   return (
     <div>
       <BackButton /> 
-      <h1>Henry's Page</h1>
+      <h1>{title}</h1>
       {/* Additional content goes here */}
     </div>
-  );
+  )
 }
 
-export default OldlaiPage;
+export default OldlaiPage
