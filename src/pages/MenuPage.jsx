@@ -5,15 +5,22 @@ function MenuPage() {
   const [title, setTitle] = useState("")
   const titleText = "The Placeholders </>"
   useEffect(() => {
+    const displayDelay = 1000
+    const intervalTime = 120
+    let intervalCount = 0
     const titleInterval = setInterval(() => {
-      setTitle((prev)=>{
-        if(prev.length >= titleText.length){
-          document.getElementsByClassName('blinkingCurser')[0].classList.add('hidden')
-          clearInterval(titleInterval)
-        }
-        return titleText.substring(0, prev.length + 1)
-      })
-    }, 120)
+      if(intervalCount >= displayDelay){
+        setTitle((prev)=>{
+          if(prev.length >= titleText.length){
+            document.getElementsByClassName('blinkingCurser')[0].classList.add('hidden')
+            clearInterval(titleInterval)
+          }
+          return titleText.substring(0, prev.length + 1)
+        })
+      }
+      console.log(intervalCount, intervalCount >= displayDelay)
+      intervalCount+=intervalTime
+    }, intervalTime)
   },[])
   return (
     <>
