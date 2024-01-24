@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import BackButton from '../../components/BackButton'
 import scrambleAppearEffect from './helper/scrambleAppearEffect'
-import '../../styles/oldlai/oldlaiPage.sass'
+import '../../styles/oldlai/pages_style/OldlaiPage.sass'
 function OldlaiPage() {
   const [title, setTitle] = useState("")
   useEffect(() => {
