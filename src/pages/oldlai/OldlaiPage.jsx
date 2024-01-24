@@ -7,7 +7,7 @@ function OldlaiPage() {
   useEffect(() => {
     const titleText = "This is Henry's page"
     const intervalTimer = 30
-    const effectDuration = 4000
+    const effectDuration = 1500
     scrambleAppearEffect(titleText, intervalTimer, effectDuration, setTitle)
   },[])
   return (
