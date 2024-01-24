@@ -13,7 +13,10 @@
 .menuLinks
     display: flex
     flex-direction: column
+    align-items: center
+    justify-content: center
     font-size: 2.5rem
+    padding: 0 //needed to overide default padding by li elements
     list-style: none
     text-decoration: none
 
@@ -29,3 +32,26 @@
 
 .menuLinks li a:hover
     transform: scale(1.1)
+
+.title-container
+    display: flex
+    justify-content: center
+    align-items: center
+
+#title
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif
+    font-size: 4rem
+    font-weight: 400
+    color: #000000
+
+.blinkingCurser
+    font-weight: 200
+    font-size: 3rem
+    animation: blink 1.1s steps(2, start) infinite
+    &.hidden
+        animation: none
+        visibility: hidden
+
+@keyframes blink
+    to
+        visibility: hidden
